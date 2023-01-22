@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* !hero section */
+section {
+  padding: 2rem 1rem;
+}
+.hero {
+  display: flex;
+}
+.heroDesc,
+.profile {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroDesc {
+  font-size: 2.5rem;
+}
+.heroDesc ul {
+  vertical-align: middle;
+  height: 3rem;
+  overflow-y: hidden;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.heroDesc ul li {
+  opacity: 1;
+  transform-origin: bottom;
+  animation: slideUp 5s ease-in infinite;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-4rem);
+  }
+  66% {
+    transform: translateY(-8rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+.profile img {
+  object-fit: cover;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* !About section */
+.about h1 {
+  font-size: 2rem;
+}
+.about p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+/* !Project section */
+.projects h1 {
+  font-size: 2rem;
+}
+.projectCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+.projectCards .card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projectCards .card img {
+  height: 200px;
+  width: 500px;
+  border-radius: 5px;
+}
+.projectCards .card a {
+  text-transform: uppercase;
+  margin: 1rem;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  transition: all 0.5s ease;
+}
+.projectCards .card a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 576px) {
+  section {
+    width: 400px;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  h1 {
+    text-align: center;
+  }
+  .about p {
+    text-align: left;
+  }
+  .projectCards .card {
+    width: auto;
+  }
+}

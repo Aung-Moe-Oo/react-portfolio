@@ -1,0 +1,22 @@
+.shuffle {
+  animation-fill-mode: forwards;
+  animation: shuffle 0.7s ease-in;
+  transform-origin: left;
+}
+@keyframes shuffle {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(0.5);
+  }
+  50% {
+    transform: scaleX(0.1);
+  }
+  75% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
