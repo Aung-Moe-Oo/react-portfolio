@@ -6,8 +6,12 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  background: #333;
+  background: #121212;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
 link {
   text-decoration: none;
 }

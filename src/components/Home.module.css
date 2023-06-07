@@ -8,7 +8,7 @@
 
 /* !hero section */
 section {
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
 .hero {
   display: flex;
@@ -68,19 +68,56 @@ section {
   text-align: justify;
 }
 /* !Project section */
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.categories {
+  background-color: #121212;
+  padding: 10px 1rem;
+}
+.cat {
+  padding: 1rem 0;
+  border-radius: 10px;
+  border-bottom: 1px solid #fff;
+}
 .projects h1 {
   font-size: 2rem;
 }
 .projectCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem;
+  gap: 8px;
 }
 .projectCards .card {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  transition: all 0.1s ease;
+}
+.projectCards .card:hover .desc {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: #0000005b;
+  backdrop-filter: blur(2px);
+}
+.projectCards .desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: all 0.1s ease;
 }
 .projectCards .card img {
   height: 200px;
@@ -111,6 +148,9 @@ section {
   }
   .about p {
     text-align: left;
+  }
+  .titleWrapper {
+    flex-direction: column;
   }
   .projectCards .card {
     width: auto;
