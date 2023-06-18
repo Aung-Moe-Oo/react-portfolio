@@ -12,8 +12,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-link {
+link,
+a {
   text-decoration: none;
+  color: inherit;
 }
 .cursive {
   font-family: "Amatic SC", cursive;

@@ -1,16 +1,17 @@
 .container {
   display: flex;
-  min-width: 400px;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   color: #fff;
+  z-index: 999;
 }
 .logo {
-  padding: 5px 15px;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 1rem;
+  }
 }
