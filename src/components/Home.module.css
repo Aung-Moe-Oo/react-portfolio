@@ -29,6 +29,7 @@ section {
   overflow-y: hidden;
   display: inline-block;
   list-style: none;
+  padding-left: 1rem;
 }
 
 .heroDesc ul li {
@@ -138,7 +139,6 @@ section {
 @media screen and (max-width: 576px) {
   section {
     padding: 1rem;
-    /* width: 400px; */
   }
   .hero {
     flex-direction: column;
@@ -155,7 +155,6 @@ section {
     flex-direction: column;
   }
   .projectCards .card {
-    /* padding: 0; */
     width: auto;
   }
 }
