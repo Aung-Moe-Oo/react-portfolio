@@ -21,7 +21,7 @@ section {
   justify-content: center;
 }
 .heroDesc {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 .heroDesc ul {
   vertical-align: middle;
@@ -35,7 +35,7 @@ section {
 .heroDesc ul li {
   opacity: 1;
   transform-origin: bottom;
-  animation: slideUp 5s ease-in infinite;
+  animation: slideUp 5s ease-in-out infinite;
 }
 
 @keyframes slideUp {
@@ -46,7 +46,7 @@ section {
     transform: translateY(-4rem);
   }
   66% {
-    transform: translateY(-8rem);
+    transform: translateY(-7rem);
   }
   100% {
     transform: translateY(0rem);
@@ -89,7 +89,7 @@ section {
 }
 .projectCards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 8px;
 }
 .projectCards .card {
@@ -123,7 +123,7 @@ section {
 }
 .projectCards .card img {
   height: 200px;
-  max-width: 300px;
+  width: 400px;
   border-radius: 5px;
 }
 .projectCards .card a {
@@ -136,7 +136,7 @@ section {
 .projectCards .card a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   section {
     padding: 1rem;
   }
@@ -156,5 +156,38 @@ section {
   }
   .projectCards .card {
     width: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .heroDesc {
+    font-size: 1.5rem;
+  }
+  .heroDesc ul {
+    vertical-align: middle;
+    height: 2rem;
+    overflow-y: hidden;
+    display: inline-block;
+    list-style: none;
+    padding-left: 1rem;
+  }
+  .heroDesc ul li {
+    opacity: 1;
+    transform-origin: bottom;
+    animation: slideUp 5s ease-in-out infinite;
+  }
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+    }
+    33% {
+      transform: translateY(-2.5rem);
+    }
+    66% {
+      transform: translateY(-5rem);
+    }
+    100% {
+      transform: translateY(0rem);
+    }
   }
 }

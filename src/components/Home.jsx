@@ -120,7 +120,7 @@ const Home = () => {
             return (
               <div key={post.slug.current} className={css.card}>
                 <img
-                  src={post.mainImage?.asset?.url}
+                  src={post.mainImage?.asset?.url + "?h=200&w=400"}
                   alt={post.title}
                   className={css.cardImg}
                 />
