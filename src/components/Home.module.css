@@ -90,15 +90,15 @@ section {
 .projectCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 8px;
+  gap: 1rem;
 }
 .projectCards .card {
-  padding: 1rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  transition: all 0.1s ease;
+  transition: all 0.5s ease;
 }
 .projectCards .card:hover .desc {
   padding: 1rem;
@@ -112,6 +112,7 @@ section {
   height: 100%;
   background: #0000005b;
   backdrop-filter: blur(2px);
+  overflow: hidden;
 }
 .projectCards .desc {
   position: absolute;
@@ -119,7 +120,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  transition: all 0.1s ease;
+  transition: all 0.5s ease;
 }
 .projectCards .card img {
   height: 200px;
