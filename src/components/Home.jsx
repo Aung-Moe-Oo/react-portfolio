@@ -12,19 +12,19 @@ const Home = () => {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "post"] | order(_updatedAt asc) {
-      title,
-      url,
-      slug,
-      body,
-      mainImage {
-        asset -> {
-          _id,
-          url
-        },
-        alt
-      }
-    }`
+        `*[_type == "post"] | order(_createdAt asc) {
+          title,
+          url,
+          slug,
+          body,
+          mainImage {
+            asset -> {
+              _id,
+              url
+            },
+            alt
+          }
+        }`
       )
       .then((data) => setPosts(data))
       .catch(console.error);
