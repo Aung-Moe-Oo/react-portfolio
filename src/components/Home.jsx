@@ -74,8 +74,8 @@ const Home = () => {
       <section className={css.about}>
         <h1>About Me</h1>
         <p>
-          I have two years of expertise developing web applications that are
-          effective and responsive. I am a experienced and driven MERN stack
+          I have over two years of expertise developing web applications that
+          are effective and responsive. I am a experienced and driven MERN stack
           developer. I have a solid expertise in the newest web development
           technologies, including JavaScript, Typescript, React.js, Next.js,
           Node.js, Express.js , Nest.js, and I am knowledgeable about industry
