@@ -62,8 +62,8 @@ const Home = () => {
             <span>I am</span>
             <ul>
               <li>Sai Aung Moe Oo</li>
-              <li>Web Developer</li>
-              <li>React Developer</li>
+              <li>Full stack Developer</li>
+              <li>Javascript Developer</li>
             </ul>
           </span>
         </div>
@@ -74,8 +74,8 @@ const Home = () => {
       <section className={css.about}>
         <h1>About Me</h1>
         <p>
-          I have over two years of expertise developing web applications that
-          are effective and responsive. I am a experienced and driven MERN stack
+          I have over three years of expertise developing web applications that
+          are effective and responsive. I am a experienced and driven full stack
           developer. I have a solid expertise in the newest web development
           technologies, including JavaScript, Typescript, React.js, Next.js,
           Node.js, Express.js , Nest.js, and I am knowledgeable about industry
